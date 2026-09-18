@@ -29,7 +29,7 @@ def view_slic_segmentation(image: np.ndarray):
 	# show the plots
 	plt.show()
 
-def segment_image(num_segments: int):
+def segment_image(num_segments: int, image: np.ndarray):
 	return slic(image, n_segments=num_segments, sigma=5, compactness=10.0)
 
 def build_rag_from_slic_segmentation(image: np.ndarray, segments: np.ndarray):
